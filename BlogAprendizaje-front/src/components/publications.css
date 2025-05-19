@@ -1,0 +1,143 @@
+/* General */
+body {
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #117B86;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar .filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar button {
+  background-color: #44B0BB;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #339EA9;
+}
+
+.navbar input,
+.navbar select {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  border: none;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main */
+.main-content {
+  max-width: 768px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Post Card */
+.post-card {
+  background: white;
+  border: 2px solid #228D98;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.post-card h2 {
+  font-size: 1.5rem;
+  color: #006974;
+  margin-bottom: 0.5rem;
+}
+
+.post-card .meta {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.post-card p {
+  color: #333;
+}
+
+.post-card button {
+  margin-top: 1rem;
+  background-color: #44B0BB;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.post-card button:hover {
+  background-color: #339EA9;
+}
+
+/* Comment Form */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.comment-form button {
+  background-color: #117B86;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #006974;
+}
+
+/* Comment List */
+.comment-item {
+  background: #f1f5f9;
+  padding: 0.75rem;
+  border-left: 4px solid #117B86;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.comment-item .author {
+  font-weight: bold;
+  color: #117B86;
+  font-size: 0.9rem;
+}
+
+.comment-item .text {
+  color: #333;
+}
